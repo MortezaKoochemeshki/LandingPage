@@ -1,0 +1,160 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none; text-decoration: none;
+    -webkit-user-drag: none;
+    transition: 0.5s;
+}
+
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+}
+
+/* Header Styles Start */
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+header .logo{
+    max-width: 80px;
+    position: relative;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    margin-left: 10px;
+    position: relative;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #FFF;
+    font-weight: 400;
+    margin-left: 40px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    width: 90px;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0; bottom: -6px;
+    height: 2px; width: 100%;
+    background: #FFF;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+header ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* Header Styles End */
+
+/* Content Styles Stars */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .texBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #FFF;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content h2 span{
+    font-size: 2em;
+}
+
+.content .textBox p{
+    color: #FFF;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #FFF;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .textBox a:hover{
+    scale: 1.1;
+}
+
+.content .imageBox{
+    max-width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.content .imageBox img{
+    max-width: 460px;
+}
+/* Content Styles End */
+
+/* Thumb Styles Start */
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+/* Thumb Styles End */

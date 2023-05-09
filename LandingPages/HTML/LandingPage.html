@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/LandingPage.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Creative Landing Page </title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="../Images/PepsiLogo.png" alt="Logo" class="logo"></a>
+            <ul>
+                <li><a href="#"> home </a></li>
+                <li><a href="#"> products </a></li>
+                <li><a href="#"> what's new </a></li>
+                <li><a href="#"> newsletter </a></li>
+                <li><a href="#"> contact </a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> That's What <br> <span> I like  </span></h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ut sapiente qui veritatis dolorem velit et voluptatem impedit quis delectus, officiis, consequatur iste commodi mollitia error natus deleniti nulla! Quidem!</p>
+
+                <a href="#"> View all products </a>
+            </div>
+            <div class="imageBox">
+                <img src="../Images/Pepsi-Image1.png" alt="Pepsi" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="../Images/Pepsi-Image1.png" alt="" onclick="imageSlider('../Images/Pepsi-Image1.png');changeBgColor('#0062BE');"></li>
+            <li><img src="../Images/Pepsi-Image2.png" alt="" onclick="imageSlider('../Images/Pepsi-Image2.png');changeBgColor('#E60C2C');"></li>
+            <li><img src="../Images/Pepsi-Image3.png" alt="" onclick="imageSlider('../Images/Pepsi-Image3.png');changeBgColor('#1E1E1E');"></li>
+        </ul>
+    </section>
+
+    <script src="../JavaScript/LandingPage.js"></script>
+</body>
+</html>
